@@ -1,0 +1,41 @@
+.Container {
+    background: rgba(0, 0, 0, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+    color: white;
+    padding: 50px;
+    .PasswordGenerator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .CopyPasswordBtn {
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+    .Forms {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .FormGroup {
+            @extend .Forms;
+            flex-direction: row;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+                padding: 10px 0;
+            }
+            &:last-child {
+                padding-top: 10px;
+            }
+        }
+    }
+}
