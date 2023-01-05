@@ -3,9 +3,9 @@ import "../scss/index.scss";
 const App = () => {
     return (
         <div className="Container">
-        <h1>Password Generator</h1>
+        <h1 className="PasswordGeneratorHeader">Password Generator</h1>
             <div className="PasswordGenerator">
-                <h2 className="PasswordGeneratorHeader">Password</h2>
+                <h2>Password</h2>
                 <button className="CopyPasswordBtn">
                     <i className="fa-solid fa-clipboard"></i>
                 </button>
@@ -33,6 +33,7 @@ const App = () => {
                     <input type="checkbox" id="SymbolsCheck" name="SymbolsCheck"/>
                 </div>
             </div>
+            <button className="PasswordGeneratorBtn">Generate Password</button>
         </div>
     )
 }
