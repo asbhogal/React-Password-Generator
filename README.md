@@ -3,3 +3,24 @@
 <h1>React Password Generator</h1>
 
 </div>
+
+A password generator built using React which allows the user to generate a password from any combination of upper and lowercase characters, numbers and symbols and copy this to their clipboard. This has been coded using HTML5, CSS3, SCSS, JavaScript (ES6) and React and leverages Webpack and Babel. This repo is currently under development.
+<strong>:heavy_check_mark: Features:</strong><br>
+  - Generates passwords of up to 20 characters in length
+  - Allows a combination of lowercase and uppercase letters, numbers and special characters
+  - Allows user to copy generated password to their clipboard
+  - Notifies when no password choice has been selected
+  - Fully responsive
+  - Optimised for the web
+
+<strong>:nerd_face: Stacks &#38; Tools Used:</strong><br>
+<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" alt="html5 logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/css3/css3-original.svg" alt="css3 logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="sass logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/postcss/brand/blob/master/dist/postcss-logo-symbol.svg"><img src="https://github.com/postcss/brand/blob/master/dist/postcss-logo-symbol.svg" alt="postcss logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"><img src="https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" alt="React logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/babel/babel-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/babel/babel-original.svg" alt="Babel logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original.svg" alt="Webpack logo" width="50" height="50" style="max-width:100%;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg"><img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" alt="Figma logo" width="50" height="50" style="max-width:100%;"></a>
