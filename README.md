@@ -2,6 +2,8 @@
 
 <h1>React Password Generator</h1>
 
+![](https://api.checklyhq.com/v1/badges/checks/551c754c-6a1d-4296-b75f-401dda9fbf69?style=for-the-badge&theme=dark) ![](https://api.checklyhq.com/v1/badges/checks/551c754c-6a1d-4296-b75f-401dda9fbf69?style=for-the-badge&theme=dark&responseTime=true) <br><br> ![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/React-Password-Generator/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/React-Password-Generator?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/React-Password-Generator?color=blueviolet&style=for-the-badge&labelColor=000)
+
 </div>
 
 A password generator built using React which allows the user to generate a password from any combination of upper and lowercase characters, numbers and symbols and copy this to their clipboard. This has been coded using HTML5, CSS3, SCSS, JavaScript (ES6) and React and leverages Webpack and Babel. This repo is currently under development.
