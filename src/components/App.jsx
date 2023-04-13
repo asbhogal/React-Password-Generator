@@ -16,14 +16,14 @@ const App = () => {
         <div className="Container">
         <h1 className="PasswordGeneratorHeader">Password Generator</h1>
             <div className="PasswordGenerator">
-                <h2>Password</h2>
+                <h2>{ password }</h2>
                 <button className="CopyPasswordBtn">
                     <i className="fa-solid fa-clipboard"></i>
                 </button>
             </div>
             <div className="Forms">
                 <div className="FormGroup">
-                    <label htmlFor="PasswordStrength">Password Strength</label>
+                    <label htmlFor="PasswordStrength">Password Length</label>
                     <label  htmlFor="PasswordStrengthSlider" 
                             id="SliderStrengthText" 
                             className={ passwordLength <= 55 ? 'WeakPassword' : 'StrongPassword' }>
@@ -35,7 +35,7 @@ const App = () => {
                             max="120" 
                             min="8" 
                             step="1" 
-                            value={ passwordLength } 
+                            defaultValue={ passwordLength }
                             onChange={(e)=>setPasswordLength(e.target.value)}
                             />
                 </div>
