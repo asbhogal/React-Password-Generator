@@ -1,16 +1,30 @@
 import { useState } from "react";
+import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from "../constants/characters";
 import "../scss/index.scss";
 
 const App = () => {
 
-    const [password, setPassword] = useState('');
-    const [passwordLength, setPasswordLength] = useState(8);
-    const [includeUppercase, setIncludeUppercase] = useState(false);
-    const [includeLowercase, setIncludeLowercase] = useState(false);
-    const [includeNumbers, setIncludeNumbers] = useState(false);
-    const [includeSymbols, setIncludeSymbols] = useState(false);
+    const   [password, setPassword] = useState('');
+    const   [passwordLength, setPasswordLength] = useState(8);
+    const   [includeUppercase, setIncludeUppercase] = useState(false);
+    const   [includeLowercase, setIncludeLowercase] = useState(false);
+    const   [includeNumbers, setIncludeNumbers] = useState(false);
+    const   [includeSymbols, setIncludeSymbols] = useState(false);
 
-    console.log(includeSymbols);
+    const   handleGeneratePassword = (e) => {
+
+        let characterList = '';
+
+        void(includeUppercase && (characterList = characterList + upperCaseLetters));
+
+        void(includeLowercase && (characterList = characterList + lowerCaseLetters));
+
+        void(includeNumbers && (characterList = characterList + numbers));
+
+        void(includeSymbols && (characterList = characterList + specialCharacters));
+
+        setPassword(characterList);
+    }
 
     return (
         <div className="Container">
@@ -76,7 +90,8 @@ const App = () => {
                             />
                 </div>
             </div>
-            <button className="PasswordGeneratorBtn">Generate Password</button>
+            <button className="PasswordGeneratorBtn" 
+                    onClick={ handleGeneratePassword }>Generate Password</button>
         </div>
     )
 }
