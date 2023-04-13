@@ -10,7 +10,7 @@ const App = () => {
     const [includeNumbers, setIncludeNumbers] = useState(false);
     const [includeSymbols, setIncludeSymbols] = useState(false);
 
-    console.log(passwordLength);
+    console.log(includeSymbols);
 
     return (
         <div className="Container">
@@ -36,24 +36,44 @@ const App = () => {
                             min="8" 
                             step="1" 
                             defaultValue={ passwordLength }
-                            onChange={(e)=>setPasswordLength(e.target.value)}
+                            onChange={ (e)=>setPasswordLength(e.target.value) }
                             />
                 </div>
                 <div className="FormGroup">
                     <label htmlFor="UpperCaseLetters">Uppercase Letters (A-Z)</label>
-                    <input type="checkbox" id="UpperCaseLettersCheck" name="UpperCaseLettersCheck"/>
+                    <input  type="checkbox" 
+                            id="UpperCaseLettersCheck" 
+                            name="UpperCaseLettersCheck" 
+                            checked={ includeUppercase }
+                            onChange={ (e) => setIncludeUppercase(e.target.checked) }
+                            />
                 </div>
                 <div className="FormGroup">
                     <label htmlFor="LowerCaseLetters">Lowercase Letters (a-z)</label>
-                    <input type="checkbox" id="LowerCaseLettersCheck" name="LowerCaseLettersCheck"/>
+                    <input  type="checkbox" 
+                            id="LowerCaseLettersCheck" 
+                            name="LowerCaseLettersCheck" 
+                            checked={ includeLowercase }
+                            onChange={ (e) => setIncludeLowercase(e.target.checked) }
+                            />
                 </div>
                 <div className="FormGroup">
-                    <label htmlFor="LowerCaseLetters">Numbers (0-9)</label>
-                    <input type="checkbox" id="NumbersCheck" name="NumbersCheck"/>
+                    <label htmlFor="Numbers">Numbers (0-9)</label>
+                    <input  type="checkbox" 
+                            id="NumbersCheck" 
+                            name="NumbersCheck" 
+                            checked={ includeNumbers }
+                            onChange={ (e) => setIncludeNumbers(e.target.checked) }
+                            />
                 </div>
                 <div className="FormGroup">
-                    <label htmlFor="LowerCaseLetters">Symbols</label>
-                    <input type="checkbox" id="SymbolsCheck" name="SymbolsCheck"/>
+                    <label htmlFor="Symbols">Symbols</label>
+                    <input  type="checkbox" 
+                            id="SymbolsCheck" 
+                            name="SymbolsCheck"
+                            checked={ includeSymbols }
+                            onChange={ (e) => setIncludeSymbols(e.target.checked) }
+                            />
                 </div>
             </div>
             <button className="PasswordGeneratorBtn">Generate Password</button>
