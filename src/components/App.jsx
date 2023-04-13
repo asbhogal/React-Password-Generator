@@ -3,12 +3,15 @@ import "../scss/index.scss";
 
 const App = () => {
 
+    const [value, setValue] = useState(8);
     const [password, setPassword] = useState('');
     const [passwordLength, setPasswordLength] = useState(65);
     const [includeUppercase, setIncludeUppercase] = useState(false);
     const [includeLowercase, setIncludeLowercase] = useState(false);
     const [includeNumbers, setIncludeNumbers] = useState(false);
     const [includeSymbols, setIncludeSymbols] = useState(false);
+
+    console.log(value);
 
     return (
         <div className="Container">
@@ -22,8 +25,16 @@ const App = () => {
             <div className="Forms">
                 <div className="FormGroup">
                     <label htmlFor="PasswordStrength">Password Strength</label>
-                    <label htmlFor="PasswordStrengthSlider" id="SliderStrengthText">8</label>
-                    <input type="range" id="PasswordStrengthSlider" name="PasswordStrengthSlider" max="65" min="8"/>
+                    <label htmlFor="PasswordStrengthSlider" id="SliderStrengthText">{value }</label>
+                    <input  type="range" 
+                            id="PasswordStrengthSlider" 
+                            name="PasswordStrengthSlider" 
+                            max="120" 
+                            min="8" 
+                            step="1" 
+                            value={ value } 
+                            onChange={(e)=>setValue(e.target.value)}
+                            />
                 </div>
                 <div className="FormGroup">
                     <label htmlFor="UpperCaseLetters">Uppercase Letters (A-Z)</label>
