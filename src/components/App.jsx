@@ -3,15 +3,14 @@ import "../scss/index.scss";
 
 const App = () => {
 
-    const [value, setValue] = useState(8);
     const [password, setPassword] = useState('');
-    const [passwordLength, setPasswordLength] = useState(65);
+    const [passwordLength, setPasswordLength] = useState(8);
     const [includeUppercase, setIncludeUppercase] = useState(false);
     const [includeLowercase, setIncludeLowercase] = useState(false);
     const [includeNumbers, setIncludeNumbers] = useState(false);
     const [includeSymbols, setIncludeSymbols] = useState(false);
 
-    console.log(value);
+    console.log(passwordLength);
 
     return (
         <div className="Container">
@@ -25,15 +24,19 @@ const App = () => {
             <div className="Forms">
                 <div className="FormGroup">
                     <label htmlFor="PasswordStrength">Password Strength</label>
-                    <label htmlFor="PasswordStrengthSlider" id="SliderStrengthText">{value }</label>
+                    <label  htmlFor="PasswordStrengthSlider" 
+                            id="SliderStrengthText" 
+                            className={ passwordLength <= 55 ? 'WeakPassword' : 'StrongPassword' }>
+                                { passwordLength }
+                            </label>
                     <input  type="range" 
                             id="PasswordStrengthSlider" 
                             name="PasswordStrengthSlider" 
                             max="120" 
                             min="8" 
                             step="1" 
-                            value={ value } 
-                            onChange={(e)=>setValue(e.target.value)}
+                            value={ passwordLength } 
+                            onChange={(e)=>setPasswordLength(e.target.value)}
                             />
                 </div>
                 <div className="FormGroup">
