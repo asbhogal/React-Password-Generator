@@ -6,12 +6,15 @@
 
 </div>
 
-A password generator built using React which allows the user to generate a password from any combination of upper and lowercase characters, numbers and symbols and copy this to their clipboard. A notification also shows when a password option hasn't been selected. This has been coded using HTML5, CSS3, SCSS, JavaScript (ES6) and React and leverages Webpack and Babel. This repo is currently under development.
+A password generator built using React which allows the user to generate a password from any combination of upper and lowercase characters, numbers and symbols and copy this to their clipboard. A notification also shows when a password option hasn't been selected. This has been coded using HTML5, CSS3, SCSS, JavaScript (ES6) and React and leverages Webpack and Babel.
 <strong>:heavy_check_mark: Features:</strong><br>
   - Generates passwords of up to 20 characters in length
   - Allows a combination of lowercase and uppercase letters, numbers and special characters
   - Allows user to copy generated password to their clipboard
   - Notifies when no password choice has been selected
+  - Displays an error message when there are no password selections made
+  - Displays an error message when there is no password to copy
+  - Displays a success message when a password generated has been copied successfully
   - Fully responsive
   - Optimised for the web
 
