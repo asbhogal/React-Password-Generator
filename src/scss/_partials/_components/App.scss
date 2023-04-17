@@ -26,6 +26,10 @@
         h2, button {
             margin: 0 10px;
         }
+        h2 {
+            overflow-x: scroll;
+            padding-bottom: 5px;
+        }
         .CopyPasswordBtn {
             padding: 5px;
             cursor: pointer;
@@ -46,10 +50,12 @@
             &:last-child {
                 padding-top: 10px;
             }
+            input {
+                cursor: pointer;
+            }
         }
     }
     .PasswordGeneratorBtn {
-        outline: none;
         padding: 5px 40px;
         cursor: pointer;            
         transition: all 0.3s ease-in;
@@ -72,3 +78,21 @@
 .StrongPassword {
     color: darkgreen;
 }
+
+/* Define the style for the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+    height: 2px; /* Set the height of the scrollbar */
+  }
+  
+  /* Define the style for the thumb of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: white; /* Set the color of the thumb */
+    border-radius: 5px; /* Set the radius of the thumb */
+  }
+  
+  /* Define the style for the track of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(56, 54, 54); /* Set the color of the track */
+  }
+  
